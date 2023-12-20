@@ -1,0 +1,313 @@
+.loading {
+    height: 100%;
+    position: fixed;
+    display: flex;
+    animation: aniloading 4s forwards;
+    background-repeat: no-repeat;
+    z-index: 1001;
+    overflow: hidden;
+}
+
+.page {
+    animation: antiloading 4s linear forwards;
+    position: absolute;
+}
+
+@keyframes aniloading {
+    0% {
+        width: 100%;
+        background-image: url(./img/giphy.gif);
+        background-size: cover;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes antiloading {
+    0% {
+        display: none;
+    }
+
+    80% {
+        display: none;
+    }
+
+    100% {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.up,
+.down {
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    text-align: center;
+    color: #fbfaf8;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 50px;
+    height: 20px;
+    background-color: #c7b19a;
+}
+
+.up {
+    transform: translateY(30px);
+}
+
+.down {
+    transform: translateY(60px);
+}
+
+.menu {
+    transform: translateY(37px);
+    margin-left: 20px;
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+.menu:hover {
+    .navigation {
+        transition: 0.2s;
+        display: flex;
+        flex-direction: column;
+        transform: translateY(30px);
+        height: 100px;
+        width: 100px;
+        gap: 10px;
+        border-radius: 10%;
+        background-color: #a58d73;
+    }
+
+    .linkbox1 {
+        text-decoration: none;
+        color: #372f2d;
+    }
+}
+
+.burger_menu {
+    position: relative;
+    border-radius: 30%;
+    display: flex;
+}
+
+.menu_button,
+.menu_button::before,
+.menu_button:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -1px;
+    margin-left: -10px;
+    width: 20px;
+    height: 2px;
+    background-color: #c7b19a;
+}
+
+.menu_button::before {
+    transform: translateY(-8px);
+    content: "";
+
+}
+
+.menu_button:after {
+    transform: translateY(8px);
+    content: "";
+}
+
+@keyframes ani1 {
+    0% {
+        background-image: url(./img/animation.jpg);
+        background-size: cover;
+    }
+
+    40% {
+        background-image: url(./img/animation1.webp);
+        background-size: cover;
+    }
+
+    60% {
+        background-image: url(./img/animation2.jpg);
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(./img/animation3.jpg);
+        background-size: cover;
+    }
+}
+
+.group:hover {
+    color: #998675;
+}
+
+.p:hover {
+    color: #251d1a;
+}
+
+.box:hover {
+    color: #998675;
+    transition: 0.2s;
+}
+
+.icon1m:hover {
+    filter: contrast(100%);
+}
+
+.group1:hover {
+    .p {
+        color: #c6b299;
+    }
+
+    .img1 {
+        filter: grayscale(0)
+    }
+
+    .h99 {
+        color: #c6b299;
+    }
+}
+
+.button:hover {
+    background-color: #998675;
+    color: antiquewhite;
+    transition: 0.2s;
+    filter: drop-shadow(0 0 3px rgb(59, 58, 58));
+    border-radius: 5px;
+}
+
+.wahom1:hover {
+    color: #c6b299;
+}
+
+.wahom2:hover {
+    color: #c6b299;
+}
+
+
+
+.button1:hover {
+    background-color: #998675;
+    color: white;
+    border: 2px #998675 solid;
+    transition: 0.2s;
+
+}
+
+.button2:hover {
+    background-color: #998675;
+    color: white;
+    border: 2px #998675 solid;
+    transition: 0.2s;
+
+}
+
+.button3:hover {
+    background-color: #998675;
+    color: white;
+    border: 2px #998675 solid;
+    transition: 0.2s;
+}
+
+.button4:hover {
+    background-color: #998675;
+    color: white;
+    border: 2px #998675 solid;
+    transition: 0.2s;
+}
+
+
+
+
+.color:hover {
+    background-color: #372f2d;
+
+    .clipath {
+        filter: brightness(50%);
+    }
+
+    .textimg {
+        color: white;
+    }
+
+    .textimg1 {
+        color: #998675;
+    }
+
+    .link {
+        display: flex;
+        transition: 0.2s;
+    }
+}
+
+.links:hover {
+    filter: brightness(50%);
+    transition: 0.2s;
+}
+
+.lupa:hover {
+    filter: brightness(50%);
+    transition: 0.2s;
+}
+
+
+
+.imgposter1:hover {
+
+    filter: brightness(100%);
+}
+
+.text4:hover {
+    color: #c7b19a;
+    transition: 0.2s;
+}
+
+.text41:hover {
+    color: #c7b19a;
+    transition: 0.2s;
+}
+
+.text42:hover {
+    color: #c7b19a;
+    transition: 0.2s;
+}
+
+
+.photo71:hover {
+    background-color: #251d1a;
+
+    .w1 {
+        color: #c6b299;
+    }
+
+    .w2 {
+        color: #fbfaf8;
+    }
+
+    .sep {
+        background-color: #a58d73;
+    }
+
+    .p30 {
+        background-color: #c7b19a;
+    }
+}
+
+.arow11:hover {
+    filter: grayscale(0);
+    filter: contrast(150%);
+}
+
+.arow10:hover {
+    filter: grayscale(0);
+}
+
+.text9:hover {
+    color: #c6b299;
+}

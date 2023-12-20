@@ -1,0 +1,26 @@
+@media (max-width:500px) {
+    .wahom2 {
+        font-size: 13px;
+    }
+
+    .section8 {
+        height: 300px;
+    }
+
+    .section9 {
+        background-color: #8c8c8c;
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 700px) {
+    .menu {
+        display: flex;
+        transform: translateX(-100px);
+    }
+
+    .box2 {
+        opacity: 0;
+    }
+}
